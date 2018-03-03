@@ -254,7 +254,7 @@ function onHtmlLoaded() {
                 var tableElements = document.getElementById("issuesTableId");
                 var issuesRows = document.createElement("tr");
                 var issuesCells = document.createElement("td");
-                issuesCells.innerHTML = '<br><strong>' + issue.name + '</strong><i> ' + issue.status + ' </i><br> Type: ' + issue.type + '<br> Description: ' + issue.description + '<br> Comments: ' + issue.comments + '<br> Created by: ' + user.name + '<br> Assigned to: ' + issue.assignee;
+                issuesCells.innerHTML = '<br><strong>' + issue.name + '</strong><i> ' + issue.status + ' </i><br> Type: ' + issue.type + '<br> Description: ' + issue.description + '<br> Comments: ' + issue.comments + '<br> Created by: ' + user.name + '<br> Assigned to: ' + issue.assignee + '<br> Created date: ' + issue.createdAt;
                 issuesRows.appendChild(issuesCells);
                 tableElements.appendChild(issuesRows);
             }
